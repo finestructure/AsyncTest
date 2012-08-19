@@ -20,6 +20,7 @@
 		5A379C4B15E111E700B8EBEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A379C2C15E111E700B8EBEF /* Foundation.framework */; };
 		5A379C5315E111E700B8EBEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A379C5115E111E700B8EBEF /* InfoPlist.strings */; };
 		5A379C5615E111E700B8EBEF /* AsyncTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A379C5515E111E700B8EBEF /* AsyncTestTests.m */; };
+		5A379C6115E1123D00B8EBEF /* SenTestCase+Async.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A379C6015E1123D00B8EBEF /* SenTestCase+Async.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		5A379C5215E111E700B8EBEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A379C5415E111E700B8EBEF /* AsyncTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncTestTests.h; sourceTree = "<group>"; };
 		5A379C5515E111E700B8EBEF /* AsyncTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncTestTests.m; sourceTree = "<group>"; };
+		5A379C5F15E1123D00B8EBEF /* SenTestCase+Async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SenTestCase+Async.h"; sourceTree = "<group>"; };
+		5A379C6015E1123D00B8EBEF /* SenTestCase+Async.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SenTestCase+Async.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 			children = (
 				5A379C5415E111E700B8EBEF /* AsyncTestTests.h */,
 				5A379C5515E111E700B8EBEF /* AsyncTestTests.m */,
+				5A379C5F15E1123D00B8EBEF /* SenTestCase+Async.h */,
+				5A379C6015E1123D00B8EBEF /* SenTestCase+Async.m */,
 				5A379C4F15E111E700B8EBEF /* Supporting Files */,
 			);
 			path = AsyncTestTests;
@@ -269,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A379C5615E111E700B8EBEF /* AsyncTestTests.m in Sources */,
+				5A379C6115E1123D00B8EBEF /* SenTestCase+Async.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
