@@ -31,7 +31,7 @@
   };
   NSArray *_runLoopModes = [NSArray arrayWithObjects:NSDefaultRunLoopMode, NSRunLoopCommonModes, nil];
   
-  NSTimeInterval checkEveryInterval = 0.2;
+  NSTimeInterval checkEveryInterval = 0.01;
   NSDate *runUntilDate = [NSDate dateWithTimeIntervalSinceNow:timeout];
   NSInteger runIndex = 0;
   while(! serialBlock()) {
