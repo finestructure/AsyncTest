@@ -24,9 +24,14 @@
 {
   BOOL(^serialBlock)() = ^BOOL{
     __block BOOL result;
+        // suppress spurious analyser warning
+#ifndef __clang_analyzer__
     dispatch_sync(self.serialQueue, ^{
-      result = block();
+      if (block) {
+        result = block();
+      }
     });
+#endif
     return result;
   };
   NSArray *_runLoopModes = [NSArray arrayWithObjects:NSDefaultRunLoopMode, NSRunLoopCommonModes, nil];
