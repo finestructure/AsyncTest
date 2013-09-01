@@ -24,7 +24,7 @@
 {
   BOOL(^serialBlock)() = ^BOOL{
     __block BOOL result;
-        // suppress spurious analyser warning
+    // suppress spurious analyser warning
 #ifndef __clang_analyzer__
     dispatch_sync(self.serialQueue, ^{
       if (block) {
